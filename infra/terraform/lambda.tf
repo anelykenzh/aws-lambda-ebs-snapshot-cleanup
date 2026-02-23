@@ -6,9 +6,10 @@ data "archive_file" "lambda_zip" {
 
 resource "aws_lambda_function" "snapshot_cleaner" {
   function_name = var.project_name
+  description   = "Deletes EBS snapshots order than retention period (default 365 days)."
   role          = aws_iam_role.lambda.arn
   handler       = "handler.handler"
-  runtime       = "python3.12"
+  runtime       = "python3.11"
   timeout       = 60
   memory_size   = 256
 
