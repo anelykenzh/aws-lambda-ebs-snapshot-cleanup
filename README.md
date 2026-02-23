@@ -92,5 +92,5 @@ Security Considerations
 ###Cleanup
 
 To destroy all created resources:
-```bash
+```
 terraform destroy
