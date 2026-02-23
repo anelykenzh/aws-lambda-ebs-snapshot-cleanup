@@ -1,7 +1,3 @@
----
-
-## ⁠ lambda/handler.py ⁠
-```python
 import os
 import logging
 from datetime import datetime, timezone, timedelta
